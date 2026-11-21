@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" font-family="Helvetica,Arial,sans-serif">
+  <rect width="1000" height="420" fill="#f8fafc"/>
+  <text x="500" y="38" font-size="24" font-weight="700" fill="#0f172a" text-anchor="middle">One transfer = two entries that must cancel out</text>
+  <text x="500" y="64" font-size="15" fill="#475569" text-anchor="middle">Alice pays Bob KES 25.00 (2,500 minor units). Customer wallets are liabilities: the platform owes the customer.</text>
+
+  <!-- Alice -->
+  <rect x="60" y="95" width="340" height="190" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <rect x="60" y="95" width="340" height="40" rx="12" fill="#fee2e2"/>
+  <text x="230" y="122" font-size="17" font-weight="700" fill="#7f1d1d" text-anchor="middle">ALICE wallet (liability)</text>
+  <line x1="230" y1="135" x2="230" y2="285" stroke="#0f172a" stroke-width="2"/>
+  <text x="145" y="162" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">DEBIT</text>
+  <text x="315" y="162" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">CREDIT</text>
+  <text x="145" y="205" font-size="22" font-weight="700" fill="#b91c1c" text-anchor="middle">25.00</text>
+  <text x="230" y="318" font-size="16" fill="#0f172a" text-anchor="middle">balance 100.00 &#8594; 75.00</text>
+
+  <!-- Bob -->
+  <rect x="600" y="95" width="340" height="190" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <rect x="600" y="95" width="340" height="40" rx="12" fill="#dcfce7"/>
+  <text x="770" y="122" font-size="17" font-weight="700" fill="#14532d" text-anchor="middle">BOB wallet (liability)</text>
+  <line x1="770" y1="135" x2="770" y2="285" stroke="#0f172a" stroke-width="2"/>
+  <text x="685" y="162" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">DEBIT</text>
+  <text x="855" y="162" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">CREDIT</text>
+  <text x="855" y="205" font-size="22" font-weight="700" fill="#15803d" text-anchor="middle">25.00</text>
+  <text x="770" y="318" font-size="16" fill="#0f172a" text-anchor="middle">balance 0.00 &#8594; 25.00</text>
+
+  <!-- middle -->
+  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker></defs>
+  <path d="M410,190 L590,190" stroke="#2563eb" stroke-width="4" fill="none" marker-end="url(#b)"/>
+  <text x="500" y="176" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle">transaction</text>
+  <text x="500" y="216" font-size="13" fill="#475569" text-anchor="middle">Idempotency-Key: pay-42</text>
+
+  <rect x="250" y="345" width="500" height="50" rx="25" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="500" y="377" font-size="18" font-weight="700" fill="#1e3a8a" text-anchor="middle">total debits 2,500  =  total credits 2,500  </text>
+</svg>
