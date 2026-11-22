@@ -24,5 +24,13 @@ services:
       WORKER_INTERVAL_MS: "500"
     ports: ["8080:8080"]
 
+  dashboard:
+    build: ./dashboard
+    depends_on: [api]
+    environment:
+      LEDGERD_URL: http://api:8080
+      LEDGERD_API_KEY: change-me-dev-key
+    ports: ["3001:3001"]
+
 volumes:
   pgdata:
