@@ -17,6 +17,9 @@ It is intentionally small and built to be *read*: every correctness decision is 
 
 ---
 
+
+> **Dashboard:** a TypeScript/React front end with a Node backend-for-frontend lives in [`dashboard/`](dashboard/). Start everything with `docker compose up --build` and open http://localhost:3001.
+
 ## Table of contents
 
 1. [What it does](#what-it-does)
@@ -420,7 +423,7 @@ Ideas for next steps: account statement + cursor pagination, reversal endpoint, 
 ├── examples/bench.rs          Posting-path benchmark
 ├── scripts/demo.sh            curl walkthrough
 ├── docs/images/               Architecture and double-entry diagrams (SVG + PNG)
-├── docs/INTERVIEW_NOTES.md    Talking points and likely questions
+├── docs/DESIGN_NOTES.md       Design rationale, trade-offs and known limitations
 ├── Dockerfile, docker-compose.yml, Makefile
 └── .github/workflows/ci.yml
 ```
